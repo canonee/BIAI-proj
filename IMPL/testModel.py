@@ -10,11 +10,14 @@ from main import DataProvider, HandwritingRecognitionModel, CTCLayer
 
 def predict_image(image_path,
                   model_path: str = "handwriting_model.h5",
-                  dataset_path: str = "iam_words"):
+                  dataset_path: str = None):
     """
     Wczytuje wytrenowany model i przewiduje napis na pojedynczym obrazie.
     Wynik jest drukowany w terminalu.
     """
+    if dataset_path is None:
+        dataset_path = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "DATA", "iam_words"))
+    
     # Sprawdź, czy plik modelu istnieje
     if not os.path.exists(model_path):
         print(f"Nie znaleziono pliku modelu: {model_path}")

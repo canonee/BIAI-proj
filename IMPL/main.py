@@ -301,7 +301,9 @@ class DataGenerator(keras.utils.Sequence):
 
 def main():
     """Główna funkcja treningu"""
-    dataset_path = "iam_words"
+    dataset_path = os.path.join(os.path.dirname(__file__), "..", "DATA", "iam_words")
+    dataset_path = os.path.abspath(dataset_path)
+
     
     print("Wczytywanie danych...")
     data_provider = DataProvider(dataset_path)
