@@ -43,17 +43,17 @@ A simple Python application for **handwritten text recognition** using a hybrid 
     ├── DATA/
     │   ├── words.new.txt
     │   └── iam_words/
-    │       ├── words.txt			# Official IAM words metadata file
+    │       ├── words.txt		# Official IAM words metadata file
     │       └── words/
     │           ├── a01/
     │           ├── a02/
     │           ├── a03/
-    │           └── ...			    # Folders with word image files
+    │           └── ...		# Folders with word image files
     ├── DOC/
-    │   └── Report.pdf				# Detailed project report and analysis
+    │   └── Report.pdf		# Detailed project report and analysis
     ├── IMPL/
-    │   ├── main.py				    # Main training script and model definition
-    │   └── testModel.py			# Script for loading a trained model and predicting single images
+    │   ├── main.py			# Main training script and model definition
+    │   └── testModel.py		# Script for loading a trained model and predicting single images
 
 ## ℹ️ Information
 * **Version:** v1.1
